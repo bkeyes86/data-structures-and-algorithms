@@ -66,7 +66,13 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let groceryList = [];
+  availableItems.forEach(function(item) {
+    if(item.available === true) {
+      groceryList.push(item.name)
+    }
+  })
+  return groceryList;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -84,7 +90,22 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  let result = [];
+  arr.forEach(function(number) {
+    if(number % 3 === 0 && number % 5 !== 0) {
+      result.push('Fizz');
+    }
+    else if(number % 5 === 0 && number % 3 !== 0) {
+      result.push('Buzz');
+    }
+    else if(number % 3 === 0 && number % 5 === 0) {
+      result.push('Fizz Buzz');
+    }
+    else {
+      result.push(number);
+    }
+  })
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------

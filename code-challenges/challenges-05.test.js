@@ -37,8 +37,8 @@ let $ = createSnippetWithJQuery(`
 `);
 
 const templateWithJQuery = () => {
-$(template).append(h2).text(starWarsPeople)
-  
+// foreach and look at horns gallery
+
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -68,10 +68,9 @@ Write a function name wordsToCharList that, given a string as input, returns a n
 For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
-let arr = ['g','r', 'e', 'g', 'o', 'r'];
-const wordsToCharList = (arr) => {
-let string1 = arr.slice();
 
+const wordsToCharList = (str) => {
+  return str.split('');
 
 };
 

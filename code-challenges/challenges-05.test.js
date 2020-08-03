@@ -55,10 +55,6 @@ For example, if the input is 'Welcome', the output will be:
 ------------------------------------------------------------------------------------------------ */
 
 const howMuchPencil = (str) => {
-  let result = [];
-
-  return result;
-};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -69,11 +65,15 @@ For example, wordsToCharList('gregor') returns ['g','r','e','g','o','r'].
 ------------------------------------------------------------------------------------------------ */
 
 
-const wordsToCharList = (str) => {
-  return str.split('');
-
+const wordsToCharList = (arr) => {
+  let results = [];
+  for(let i = 0; i <= `${arr.length}`; i++){
+    let x = (i + 1)
+    results.push(arr.slice(i,x))
+  }
+  console.log(results) 
+  return results
 };
-
 
 
 /* ------------------------------------------------------------------------------------------------

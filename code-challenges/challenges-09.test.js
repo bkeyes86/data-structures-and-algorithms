@@ -189,9 +189,8 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
-  const nums = [arr];
-  let sum = nums.reduce((accumulator, value) => accumulator + value,0);
-  return sum;
+return  arr.reduce((accumulator, value) => {
+  arr.push(arr);
 };
 
 /* ------------------------------------------------------------------------------------------------

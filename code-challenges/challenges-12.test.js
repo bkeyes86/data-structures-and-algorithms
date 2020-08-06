@@ -38,17 +38,17 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 const grandTotal = (stores) => {
   let hourlySales =[];
 
-  for(let hourIndex = 0; hourIndex < hoursOpen.length; j++) {
+  for(let hourIndex = 0; hourIndex < hoursOpen.length; hourIndex++) {
     let hourlySum = 0;
 
     for (let j = 0; j < stores.length; j++) {
       let store = stores[j];
-      
+
       hourlySum += store[hourIndex];
     }
     hourlySales[hourIndex] = hourlySum;
   }
-return hourlySales;
+  return hourlySales;
 
 };
 grandTotal(cookieStores);
@@ -63,7 +63,7 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,6 +88,8 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
+  let treatCount = 0;
+
   for (let i = 0; i < arr.length; i++) {
     let errand = arr[i];
     let { items } = errand;
@@ -101,8 +103,9 @@ const howManyTreats = (arr) => {
     }
 
   }
-  };
-return treatCount;
+  return treatCount;
+};
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
